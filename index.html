@@ -42,22 +42,16 @@
             </p>
             <code>
                 <pre>
-              
-                    people.sort(function (a, b) {
-                        for (let i=0 ; i <1000; i++){
-                        if (a.age > b.age) {
-                          return 1;
-                        }
-                        if (a.age < b.age) {
-                          return -1;
-                        }
-                        // a должно быть равным b
-                        return 0;
-                        }
-                      });
                     
-                  return people.sort((prev, next) => prev.age - next.age);
-                  }
+                    function add(x){
+                        return function addOther(y){
+                            return x + y;
+                        };
+                      }
+  
+                     people.sort((prev, next) => prev.age - next.age); //complete this function
+                    }
+                    
               </pre>
           </code>    
         </div>
