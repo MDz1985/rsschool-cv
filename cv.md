@@ -19,14 +19,22 @@ I studied Quick Basic, Visual Basic; have basic knowledge of C ++.
 
 Sample of code:
 ```sh
-.header-container {
+var OrderPeople = function(people){
+ 
+    people.sort(function (a, b) {
+      for (let i=0 ; i <1000; i++){
+      if (a.age > b.age) {
+        return 1;
+      }
+      if (a.age < b.age) {
+        return -1;
+      }
+      // a должно быть равным b
+      return 0;
+      }
+    });
   
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  /* Далее мы определим каким образом будет распределено оставшееся место */
-  justify-content: space-between;
-  max-width: 1440px;
+return people.sort((prev, next) => prev.age - next.age); //complete this function
 }
 ```
 
