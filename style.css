@@ -12,7 +12,11 @@ html {
   }
   
    
-  body{margin: 0;}
+  body{
+    margin: 0;
+    background: var(--bg-dark);
+  }
+
   
   
   
@@ -23,23 +27,44 @@ html {
   
   
   
-  h1{font: 28px forum;color: white;text-transform: uppercase;font-size: 28px;line-height: 50px;letter-spacing: 5px;animation: color-change 0.00005ks infinite;
+  h1{font: 60px forum;color: white;text-transform: uppercase;line-height: 50px;letter-spacing: 5px;animation: color-change 0.00005ks infinite;
 }
+li {list-style: none;}
+  h3{margin-block-end: 0;margin-block-start: 0;}
   
   
-  
+  .button{
+    position: fixed;
+    right: 10%;
+    border: none;
+    background-color: transparent;
+    color: rgb(26, 24, 24);
+  }
+
+  .button:hover{
+    color: rgb(78, 2, 2);
+    cursor: pointer;
+  }
+
   .main{
-    background: var(--bg-dark)
+    
+    display: flex;
+    flex-flow: row nowrap;
   }
   
   .container {
     
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 1000px;
     width: calc(100% - 40px);
     padding: 4px;
     font-size: 20px;
     color: #d4e0d4;
+    
+  }
+
+  .dark{
+    background-color: #40403b48;
   }
   
   .codeContainer {
@@ -52,10 +77,6 @@ html {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #000000;
   }
-  
-  /*
-  Header
-  */
   
   
   header{
@@ -71,21 +92,198 @@ html {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    /* Далее мы определим каким образом будет распределено оставшееся место */
+    justify-content: space-evenly;
+    /* max-width: 1440px; */
+    background-color: #40403b;
+    align-self: center;
+  }
+
+  .info-container{
+    margin: 0vw 4vw 0 1vw;
+  }
+
+  .skills {
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
-    max-width: 1440px;
+    font-size: 30px;
+  }
+
+  .skills ul {
+    padding: 0;
   }
   
-  .logo-container {
+  .squares ul {
+    padding-left: 20px;
+  }
+
+  #works {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+  }
+
+  #works div{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+  }
+
+  #works p{
+    margin: 0px 0;
+    font-size: small;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* .logo-container {
    position: relative;
    bottom: 40px;
     width: 400px;
     height: 50px;
     
+  } */
+  
+  .video {
+    display: flex;
+    justify-content: center;
   }
   
+  .sidenav {
+
+    visibility: hidden;
+
+    height: 100%;
+    width: 10%;
+    min-width: 30px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #40403b;
+    
+    display: flex;
+    align-items: space;
+    /* justify-content: center; */
+    
+    
+    
+  }
+
   
   
+  .sidenav ul {
+    
+    /* padding-top: 40%; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    /* justify-content: space-between; */
+    /* align-content: center; */
+    
+    
+    width: 100%;
+    
+  }
+
+  .sidenav li {
+
+
+    
+    list-style: none;
+    flex: auto
+    
+  }
+  .sidenav a{
+    display: block;
+    width: 8vw;
+    height: 8vw;
+    
+  }
+  .sidenav img {
+    width: 100%;
+
+  }
+  .sidenav div{
+    width: 100%;
+    height: 100%;
+  }
+  #listButton {
+    background:url(assets/svg/list.svg) no-repeat;
+  }
+
+  #listButton:hover {
+    background:url(assets/svg/listHover.svg) no-repeat;    
+  }
+
+  #codeButton {
+    background:url(assets/svg/code.svg) no-repeat;
+  }
+
+  #codeButton:hover {
+    background:url(assets/svg/codeHover.svg) no-repeat;
+  }
+
+  #contactsButton {
+    background:url(assets/svg/contacts.svg) no-repeat;
+  }
+
+  #contactsButton:hover {
+    background:url(assets/svg/contactsHover.svg) no-repeat;
+  }
+
+  #projectsButton {
+    background:url(assets/svg/projects.svg) no-repeat;
+  }
+
+  #projectsButton:hover {
+    background:url(assets/svg/projectsHover.svg) no-repeat;
+  }
+
+  #skillsButton {
+    background:url(assets/svg/skills.svg) no-repeat;
+  }
+
+  #skillsButton:hover {
+    background:url(assets/svg/skillsHover.svg) no-repeat;
+  }
+
+  #videoButton {
+    background:url(assets/svg/video.svg) no-repeat;
+  }
+
+  #videoButton:hover {
+    background:url(assets/svg/videoHover.svg) no-repeat;
+  }
+
+
+  .sidenav button{
+    height: 20%;
+    
+    
+  }
+  
+
+
+
+  footer{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  footer p{
+    margin: 0;
+    font-size: 40px;
+    padding:10px 0;
+  }
+  footer a{
+    padding: 10px;
+  }
   
   
   
