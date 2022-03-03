@@ -1,2 +1,4 @@
 # rsschool-cv
-https://MDZ1985.github.io/rsschool-cv
+https://MDz1985.github.io/rsschool-cv/
+
+
