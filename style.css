@@ -1,74 +1,75 @@
 html {
     scroll-behavior: smooth;
-  }
-  
-  :root {
+}
+
+:root {
     --bg-dark: #837d67;
     --dark-red: #710707;
     --font-gold: #9d8665;
     --font1: 80px;
     --font2: 32px;
     --font3: 28px;
-  }
-  
-   
-  body{
+}
+
+
+body {
     margin: 0;
     background: var(--bg-dark);
-  }
-
-  
-  
-  
-  
-  
- 
-  
-  
-  
-  
-  h1{font: 60px forum;color: white;text-transform: uppercase;line-height: 50px;letter-spacing: 5px;animation: color-change 0.00005ks infinite;
 }
-li {list-style: none;}
-  h3{margin-block-end: 0;margin-block-start: 0;}
-  
-  
-  .button{
+
+
+h1 {
+    font: 60px forum;
+    color: white;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 5px;
+    animation: color-change 0.00005ms  infinite;
+}
+
+
+h3 {
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+
+.button {
     position: fixed;
     right: 10%;
     border: none;
     background-color: transparent;
     color: rgb(26, 24, 24);
-  }
+}
 
-  .button:hover{
+.button:hover {
     color: rgb(78, 2, 2);
     cursor: pointer;
-  }
+}
 
-  .main{
-    
+.main {
+
     display: flex;
     flex-flow: row nowrap;
-  }
-  
-  .container {
-    
+}
+
+.container {
+
     margin: 0 auto;
     max-width: 1000px;
     width: calc(100% - 40px);
     padding: 4px;
     font-size: 20px;
     color: #d4e0d4;
-    
-  }
 
-  .dark{
+}
+
+.dark {
     background-color: #40403b48;
-  }
-  
-  .codeContainer {
-    
+}
+
+.codeContainer {
+
     margin: 0 auto;
     max-width: 700px;
     width: calc(100% - 40px);
@@ -76,19 +77,19 @@ li {list-style: none;}
     font-size: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #000000;
-  }
-  
-  
-  header{
+}
+
+
+header {
     background: var(--bg-dark);
     padding: 60px 0px 55px 0;
     color: #fff;
-    
-  } 
-  
-  
-  .header-container {
-    
+
+}
+
+
+.header-container {
+
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -96,64 +97,63 @@ li {list-style: none;}
     /* max-width: 1440px; */
     background-color: #40403b;
     align-self: center;
-  }
+}
 
-  .info-container{
+.info-container {
     margin: 0vw 4vw 0 1vw;
-  }
+}
 
-  .skills {
+.skills {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    font-size: 30px;
-  }
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: auto;
+}
 
-  .skills ul {
-    padding: 0;
-  }
-  
-  .squares ul {
+
+.squares ul {
     padding-left: 20px;
-  }
+}
 
-  #works {
+#works {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    
-  }
 
-  #works div{
+}
+
+#works div {
     display: flex;
     flex-direction: column;
     max-width: 250px;
-  }
+}
 
-  #works p{
+#works p {
     margin: 0px 0;
     font-size: small;
-  }
+}
 
-  .main-container{
+.main-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  /* .logo-container {
-   position: relative;
-   bottom: 40px;
-    width: 400px;
-    height: 50px;
-    
-  } */
-  
-  .video {
+}
+
+/* .logo-container {
+ position: relative;
+ bottom: 40px;
+  width: 400px;
+  height: 50px;
+
+} */
+
+.video {
     display: flex;
     justify-content: center;
-  }
-  
-  .sidenav {
+}
+
+.sidenav {
 
     visibility: hidden;
 
@@ -165,19 +165,15 @@ li {list-style: none;}
     top: 0;
     right: 0;
     background-color: #40403b;
-    
-    display: flex;
-    align-items: space;
-    /* justify-content: center; */
-    
-    
-    
-  }
 
-  
-  
-  .sidenav ul {
-    
+    display: flex;
+
+
+}
+
+
+.sidenav ul {
+
     /* padding-top: 40%; */
     display: flex;
     flex-direction: column;
@@ -185,111 +181,112 @@ li {list-style: none;}
     padding-right: 1vw;
     /* justify-content: space-between; */
     /* align-content: center; */
-    
-    
+
+
     width: 100%;
-    
-  }
 
-  .sidenav li {
+}
+
+.sidenav li {
 
 
-    
     list-style: none;
     flex: auto
-    
-  }
-  .sidenav a{
+
+}
+
+.sidenav a {
     display: block;
     width: 8vw;
     height: 8vw;
-    
-  }
-  .sidenav img {
+
+}
+
+.sidenav img {
     width: 100%;
 
-  }
-  .sidenav div{
+}
+
+.sidenav div {
     width: 100%;
     height: 100%;
-  }
-  #listButton {
-    background:url(assets/svg/list.svg) no-repeat;
-  }
+}
 
-  #listButton:hover {
-    background:url(assets/svg/listHover.svg) no-repeat;    
-  }
+#listButton {
+    background: url(assets/svg/list.svg) no-repeat;
+}
 
-  #codeButton {
-    background:url(assets/svg/code.svg) no-repeat;
-  }
+#listButton:hover {
+    background: url(assets/svg/listHover.svg) no-repeat;
+}
 
-  #codeButton:hover {
-    background:url(assets/svg/codeHover.svg) no-repeat;
-  }
+#codeButton {
+    background: url(assets/svg/code.svg) no-repeat;
+}
 
-  #contactsButton {
-    background:url(assets/svg/contacts.svg) no-repeat;
-  }
+#codeButton:hover {
+    background: url(assets/svg/codeHover.svg) no-repeat;
+}
 
-  #contactsButton:hover {
-    background:url(assets/svg/contactsHover.svg) no-repeat;
-  }
+#contactsButton {
+    background: url(assets/svg/contacts.svg) no-repeat;
+}
 
-  #projectsButton {
-    background:url(assets/svg/projects.svg) no-repeat;
-  }
+#contactsButton:hover {
+    background: url(assets/svg/contactsHover.svg) no-repeat;
+}
 
-  #projectsButton:hover {
-    background:url(assets/svg/projectsHover.svg) no-repeat;
-  }
+#projectsButton {
+    background: url(assets/svg/projects.svg) no-repeat;
+}
 
-  #skillsButton {
-    background:url(assets/svg/skills.svg) no-repeat;
-  }
+#projectsButton:hover {
+    background: url(assets/svg/projectsHover.svg) no-repeat;
+}
 
-  #skillsButton:hover {
-    background:url(assets/svg/skillsHover.svg) no-repeat;
-  }
+#skillsButton {
+    background: url(assets/svg/skills.svg) no-repeat;
+}
 
-  #videoButton {
-    background:url(assets/svg/video.svg) no-repeat;
-  }
+#skillsButton:hover {
+    background: url(assets/svg/skillsHover.svg) no-repeat;
+}
 
-  #videoButton:hover {
-    background:url(assets/svg/videoHover.svg) no-repeat;
-  }
+#videoButton {
+    background: url(assets/svg/video.svg) no-repeat;
+}
+
+#videoButton:hover {
+    background: url(assets/svg/videoHover.svg) no-repeat;
+}
 
 
-  .sidenav button{
+.sidenav button {
     height: 20%;
-    
-    
-  }
-  
 
 
+}
 
-  footer{
+
+footer {
     display: flex;
     justify-content: space-evenly;
-  }
-  
-  footer p{
+}
+
+footer p {
     margin: 0;
     font-size: 40px;
-    padding:10px 0;
-  }
-  footer a{
+    padding: 10px 0;
+}
+
+footer a {
     padding: 10px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+}
+
+
+
+
+
+
+
+
