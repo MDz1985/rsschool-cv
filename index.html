@@ -17,7 +17,7 @@
   <div class="main-container">
     <div class="container">
       <div class="header-container">
-        <img class="im" src="https://i.pinimg.com/originals/70/5b/88/705b88949a1561c86021c02a712d7e43.jpg" alt="avatar"
+        <img class="im" src="./assets/jpg/photo.jpg" alt="avatar"
              height="340">
         <div id="contacts" class="info-container">
 
@@ -41,21 +41,29 @@
       <h2>Skills</h2>
       <div id="my-skills" class="skills">
         <div>
+          <h3>Intermediate</h3>
           <ul>
+            <li>Javascript(ES6)</li>
+            <li>OOP</li>
             <li>HTML</li>
+            <li>DOM</li>
             <li>CSS</li>
-            <li>Java Script</li>
-            <li>Type Script</li>
-            <li>English</li>
+            <li>BEM</li>
+            <li>SASS/SCSS</li>
+            <li>Webpack</li>
+            <li>ESLint</li>
+            <li>Prettier</li>
+            <li>NPM/Yarn</li>
+            <li>Chrome DevTools</li>
+            <li>KISS, DRY, YAGNI</li>
           </ul>
         </div>
-        <div class="squares">
+        <div>
+          <h3>Novice</h3>
           <ul>
-            <li>&#X25A0; &#X25A0; &#X25A0; &#X25A0; &#X25A1;</li>
-            <li>&#X25A0; &#X25A0; &#X25A0; &#X25A0; &#X25A1;</li>
-            <li>&#X25A0; &#X25A0; &#X25A0; &#X25A0; &#X25A1;</li>
-            <li>&#X25A0; &#X25A0; &#X25A0; &#X25A1; &#X25A1;</li>
-            <li>A2+</li>
+            <li>Angular</li>
+            <li>RxJS</li>
+            <li>Unit testing</li>
           </ul>
         </div>
       </div>
@@ -64,47 +72,20 @@
     <div id="main-information" class="container dark">
       <h2>Main information</h2>
       <h3>About me</h3>
-      <p>
-        I graduated from Minsk State Power college with honors,
-        then the BNTU. For 16 years I have worked at the Minsk’s Combined heat and power plant №4.
-        6 of this - as a head of the shift of the heat automation and measurement workshop.
-        There I got good teamwork and leadership skills.
-        <br>I strive to develop and know the new one.
-        <br>In 2021 I interested with programming. I began to study in RSSchool to become a front-end developer.
-        I passed RSSchool JS Frontend Stage 0 courses and received a certificate.
-        I studied HTML, CSS (SASS/SCSS), JS, Webpack, TS, began to learn Angular.
-        <br>Now I'm finishing Stage 2 (current position is 135). <br>I will continue to learn frameworks in the Stage 3.
-      </p>
+      <ul>
+        <li>High engineering education</li>
+        <li>Team development experience</li>
+        <li>English A2+</li>
+      </ul>
       <h3>Education</h3>
-      <p>2001-2005 - Minsk State Power College "Automation and Management of Energy Processes"</p>
-      <p>2005 - 2011 - Belarusian National Technical University "Heat power plants"</p>
-      <p>2021-2022 - RSSchool JS Frontend courses (Stage 0, Stage 1, Stage 2)</p>
-    </div>
-    <div id="code-sample" class="container">
-      <h2>
-        Sample of code:
-      </h2>
-
-      <div class=codeContainer>
-                    <pre class="hljs"
-                         style="display: block; overflow-x: auto; padding: 0.5em; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"><span
-                        class="hljs-function"><span class="hljs-keyword" style="color: rgb(0, 0, 255);">function</span> <span
-                        class="hljs-title" style="color: rgb(163, 21, 21);">highAndLow</span>(<span class="hljs-params">numbers</span>)</span>{
-                        <span class="hljs-keyword" style="color: rgb(0, 0, 255);">let</span> arr = numbers.split(<span
-                          class="hljs-string" style="color: rgb(163, 21, 21);">' '</span>).sort(<span
-                          class="hljs-function"><span class="hljs-keyword"
-                                                      style="color: rgb(0, 0, 255);">function</span>(<span
-                          class="hljs-params">a, b</span>) </span>{ <span class="hljs-keyword"
-                                                                          style="color: rgb(0, 0, 255);">return</span> a - b });
-                        <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span> arr[arr.length <span
-                          class="hljs-number">-1</span>] + <span class="hljs-string" style="color: rgb(163, 21, 21);">' '</span> + arr[<span
-                          class="hljs-number">0</span>];
-                      }</pre>
-      </div>
+      <ul>
+        <li>2001-2005 - Minsk State Power College "Automation and Management of Energy Processes"</li>
+        <li>2005 - 2011 - Belarusian National Technical University "Heat power plants"</li>
+        <li>2021-2022 - RSSchool JS Frontend courses (Stage 0, Stage 1, Stage 2)</li>
+      </ul>
     </div>
 
-
-    <div id="my-projects" class="container dark">
+    <div id="my-projects" class="container">
       <h2>My projects</h2>
       <div id="works">
         <div>
@@ -164,14 +145,27 @@
         </div>
         <div>
           <a target="_blank"
-             href="https://github.com/AliQuickC/rslang/pull/14"><img
+             href="https://aliquickc.github.io/rslang/"><img
               src="assets/jpg/rslang.jpg" alt="Player" width="250"></a>
-          <h3>Learn-English</h3>
+          <h3>RS-Lang</h3>
           <p>Made using HTML SCSS/SASS WEBPACK TS</p>
-          <p>This is a project of two persons team (including me). Here you will find a dictionary, two games and statistics of your learning</p>
+          <p>This is a project of two persons team (including me). Here you will find a dictionary, two games and
+            statistics of your learning</p>
         </div>
 
       </div>
+    </div>
+    <div id="last-project" class="container dark">
+      <h2>Last project(command training project RS-Lang)</h2>
+      <h3>project</h3>
+      <p>Creating an application for learning foreign english words, including an electronic textbook with a database of words
+        to study, mini-games for repeating them, a statistics page for tracking individual progress</p>
+      <h3>My role</h3>
+      <p>Developer (Drawings, Audio-challenge game, Statistics page, Logic of learning, Authorization)</p>
+      <h3>Duration</h3>
+      <p>3 weeks</p>
+      <h3>Used technologies</h3>
+      <p>SASS/SCSS, Webpack, ESLint, Prettier, Typescript, GoogleCharts</p>
     </div>
     <div id="my-video" class="container">
       <h2>Video</h2>
@@ -182,7 +176,6 @@
       </div>
     </div>
   </div>
-
 
   <nav class="sidenav">                                                           <!-- Меню -->
     <ul>
@@ -200,7 +193,7 @@
         <div id="codeButton" title="Code"><a href="#code-sample"></a></div>
       </li>
       <li>
-        <div id="projectsButton" title="My projests"><a href="#my-projects"></a></div>
+        <div id="projectsButton" title="My projects"><a href="#my-projects"></a></div>
       </li>
 
       <li>
