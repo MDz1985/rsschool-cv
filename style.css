@@ -33,6 +33,7 @@ h3 {
     margin-block-start: 0;
 }
 
+a {color: wheat}
 
 .button {
     position: fixed;
@@ -66,6 +67,10 @@ h3 {
 
 .dark {
     background-color: #40403b48;
+}
+
+.dark p {
+    margin-left: 5%;
 }
 
 .codeContainer {
@@ -117,17 +122,21 @@ header {
 }
 
 #works {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    grid-row-gap: 10px;
 }
 
 #works div {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
 }
+
+#works img {
+    width: 100%;
+}
+
 
 #works p {
     margin: 0px 0;
@@ -283,8 +292,17 @@ footer a {
     padding: 10px;
 }
 
+@media (max-width: 768px) {
+    #works{
+        grid-template-columns: 49% 49%;
+    }
+}
 
-
+@media (max-width: 420px) {
+    #works{
+        grid-template-columns: 100%;
+    }
+}
 
 
 
