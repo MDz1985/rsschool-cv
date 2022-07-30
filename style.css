@@ -24,7 +24,7 @@ h1 {
     text-transform: uppercase;
     line-height: 50px;
     letter-spacing: 5px;
-    animation: color-change 0.00005ms  infinite;
+    animation: color-change 0.00005ms infinite;
 }
 
 
@@ -33,7 +33,9 @@ h3 {
     margin-block-start: 0;
 }
 
-a {color: wheat}
+a {
+    color: wheat
+}
 
 .button {
     display: none;
@@ -120,6 +122,31 @@ header {
 
 .squares ul {
     padding-left: 20px;
+}
+
+.certificates {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+}
+
+.certificate__img {
+    display: block;
+    aspect-ratio: 1.4;
+    background: center / contain no-repeat;
+}
+
+.stage0 {
+    background-image: url("assets/jpg/certST0.jpg");
+}
+
+.stage12 {
+    background-image: url("assets/jpg/certST1-2.jpg");
+}
+
+.stage3 {
+    background-image: url("assets/jpg/certST3(Angular).jpg");
 }
 
 #works {
@@ -294,9 +321,10 @@ footer a {
 }
 
 @media (max-width: 768px) {
-    #works{
+    #works {
         grid-template-columns: 49% 49%;
     }
+
     .main-container {
         width: 100%;
     }
@@ -304,14 +332,20 @@ footer a {
     .sidenav {
         visibility: hidden;
     }
+
     .button {
         display: block;
     }
 }
 
 @media (max-width: 420px) {
-    #works{
+    #works {
         grid-template-columns: 100%;
+    }
+
+    .certificates {
+        grid-template-columns: 1fr;
+        grid-gap: inherit;
     }
 }
 
